@@ -251,8 +251,10 @@ Start a training session + save
 print("Start a training session")
 
 if (CONTINUE_TRAINING == True):
-    model = model_from_json(open(f'{RESULTS_PATH}/model_conv3D.json').read())
-    model.load_weights(f'{RESULTS_PATH}/weights_conv3D.h5')
+    model_name = os.path.join(os.path.abspath('..'), "notebooks\model\model_conv3D.json")
+    model = model_from_json(open(model_name).read())
+    weights_name = os.path.join(os.path.abspath('..'), "notebooks\model\weights_conv3D.h5")
+    model.load_weights(weights_name)
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 for serie in range(NB_SESSION):
@@ -275,6 +277,6 @@ for serie in range(NB_SESSION):
 
     #save data
     model_json = model.to_json()
-    open(f'{RESULTS_PATH}/model_conv3D.json', 'w').write(model_json)
-    model.save_weights(f'{RESULTS_PATH}/weights_conv3D.h5', overwrite=True)
+    open(model_name, 'w').write(model_json)
+    model.save_weights(weights_name, overwrite=True)
     print('A new model has been saved!\n')
