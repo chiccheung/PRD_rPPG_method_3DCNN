@@ -27,6 +27,11 @@
 
 ## Installing
 
+- Python v3.8
+- cuda_10.1.243_426.00_win10
+- cuDNN v7.6.5.32
+
+
 * 新建名为 PRD_rPPG，Python 版本3.8 的 conda 环境
   - `conda create -n PRD_rPPG python=3.8`
 
