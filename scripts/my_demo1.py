@@ -51,9 +51,9 @@ video.showVideo()
 # %%
 
 # 定义一个配置文件。它包含与数据集相关的所有信息（如路径 the path），以及测试过程（如超参数 hyperparamenters）。
-cfgFilename = '../pyVHR/pyVHR/analysis/sample.cfg'
-
+cfgFilename = '../pyVHR/pyVHR/analysis/default_test.cfg'
 # -- apply the pipeline until GT comparison
+
 test = TestSuite(configFilename=cfgFilename)
 
 # -- run exp and save results on a pandas file
@@ -64,7 +64,7 @@ test = TestSuite(configFilename=cfgFilename)
 #       3 - display spectra
 #       4 - display errors
 #       (use also combinations, e.g. verb=21, verb=321)
-result = test.start(outFilename='sampleExp.h5', verb=1)
+result = test.start(outFilename='sampleExp.h5', verb=4)
 
 # %%
 
