@@ -32,7 +32,7 @@
 - cuDNN v7.6.5.32
 
 
-* 新建名为 PRD_rPPG，Python 版本3.8 的 conda 环境
+* 新建名为 PRD_rPPG，Python 版本为 3.8 的 conda 环境
   - `conda create -n PRD_rPPG python=3.8`
 
 * 切换 conda 环境到 PRD_rPPG
