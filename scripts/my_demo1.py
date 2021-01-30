@@ -9,7 +9,7 @@ from pyVHR.analysis.testsuite import TestSuite, TestResult
 #%%
 
 # -- Video object
-videoFilename = "../sampleDataset/alex/alex_resting/cv_camera_sensor_stream_handler.avi"
+videoFilename = "./alex_resting/cv_camera_sensor_stream_handler.avi"
 video = Video(videoFilename)
 
 # -- extract faces
