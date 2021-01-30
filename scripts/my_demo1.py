@@ -49,9 +49,7 @@ video.showVideo()
 
 # %%
 
-# -- Define a configuration file.
-#    It contains all the information relative to the dataset (e.g. the path),
-#    and the test procedure (e.g. hyperparamenters)
+# 定义一个配置文件。它包含与数据集相关的所有信息（如路径 the path），以及测试过程（如超参数 hyperparamenters）。
 cfgFilename = '../pyVHR/analysis/sample.cfg'
 
 # -- apply the pipeline until GT comparison
