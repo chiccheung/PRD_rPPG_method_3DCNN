@@ -47,10 +47,11 @@ video.setMask(typeROI='skin_fix', skinThresh_fix=[20, 50])
 video.printROIInfo()
 video.showVideo()
 
+
 # %%
 
 # 定义一个配置文件。它包含与数据集相关的所有信息（如路径 the path），以及测试过程（如超参数 hyperparamenters）。
-cfgFilename = '../pyVHR/analysis/sample.cfg'
+cfgFilename = '../pyVHR/pyVHR/analysis/sample.cfg'
 
 # -- apply the pipeline until GT comparison
 test = TestSuite(configFilename=cfgFilename)
